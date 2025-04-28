@@ -521,7 +521,7 @@ high-speed node quantity: `200`
 - you can import these 200 tested nodes using their subscription link into different clients. refer to `Instructions & Usage` section
 
 ### all nodes
-merge nodes w/o dup: `1093`
+merge nodes w/o dup: `345`
 - [Node link Mixed (V2ray)](https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/sub/sub_merge.txt)
 - [Node link Yaml (Clash)](https://raw.githubusercontent.com/mahdibland/SSAggregator/master/sub/sub_merge_yaml.yml)
 
@@ -547,10 +547,9 @@ merge nodes w/o dup: `1093`
 - [ermaozi/get_subscribe](https://github.com/ermaozi/get_subscribe), number of nodes: `21`
 - [anaer/Sub](https://github.com/anaer/Sub), number of nodes: `55`
 - [aiboboxx/v2rayfree](https://github.com/aiboboxx/v2rayfree), number of nodes: `167`
-- [Pawdroid/Free-servers](https://github.com/Pawdroid/Free-servers), number of nodes: `45`
-- [mfuu/v2ray](https://github.com/mfuu/v2ray), number of nodes: `537`
-- [peasoft/NoMoreWalls](https://github.com/peasoft/NoMoreWalls), number of nodes: `167`
-- [mahdibland/get_v2](https://github.com/mahdibland/get_v2), number of nodes: `2459`
+- [Pawdroid/Free-servers](https://github.com/Pawdroid/Free-servers), number of nodes: `44`
+- [mfuu/v2ray](https://github.com/mfuu/v2ray), number of nodes: `565`
+- [peasoft/NoMoreWalls](https://github.com/peasoft/NoMoreWalls), number of nodes: `140`
 
 ## Softwares
 
