@@ -48,14 +48,6 @@
     "enabled": true
   },
   {
-    "id": 39,
-    "remarks": "yaney01/Yaney01",
-    "site": "https://github.com/yaney01/Yaney01",
-    "url": "https://ghproxy.com//raw.githubusercontent.com/yaney01/Yaney01/main/yaney_01",
-    "update_method": "auto",
-    "enabled": true
-  },
-  {
     "id": 41,
     "remarks": "peasoft/NoMoreWalls",
     "site": "https://github.com/peasoft/NoMoreWalls",
