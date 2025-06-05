@@ -29,7 +29,7 @@ proxy-groups:
 proxy-providers:
   all:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=CN,HK,TW,US,CA,JP,SG,AU,CH,DE,GB,NL,FR,RU"
+    url: "https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml"
     path: bihai/provider.yaml
     health-check:
       enable: true
