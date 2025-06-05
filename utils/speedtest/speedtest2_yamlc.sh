@@ -1,11 +1,11 @@
 # Clash
-wget -O clash.gz https://github.com/Dreamacro/clash/releases/download/v1.11.8/clash-linux-amd64-v1.11.8.gz
+wget -O clash.gz https://github.com/MetaCubeX/mihomo/releases/download/v1.19.10/mihomo-linux-amd64-v1.19.10.gz
 gunzip clash.gz
 wget -O lite-linux-amd64.gz https://github.com/xxf098/LiteSpeedTest/releases/download/v0.14.1/lite-linux-amd64-v0.14.1.gz
 gzip -d lite-linux-amd64.gz
-wget -O clash_config.yml https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/utils/speedtest/clash_config_eu.yml
-wget -O proxychains.conf https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/utils/speedtest/proxychains.conf
-wget -O lite_config.json https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/utils/speedtest/lite_config_yaml.json
+wget -O clash_config.yml https://raw.githubusercontent.com/greatcoolge/ShadowsocksAggregator/master/utils/speedtest/clash_config_eu.yml
+wget -O proxychains.conf https://raw.githubusercontent.com/greatcoolge/ShadowsocksAggregator/master/utils/speedtest/proxychains.conf
+wget -O lite_config.json https://raw.githubusercontent.com/greatcoolge/ShadowsocksAggregator/master/utils/speedtest/lite_config_yaml.json
 #初始化 Clash
 chmod +x ./clash && ./clash &
 #安装并配置 proxychains
