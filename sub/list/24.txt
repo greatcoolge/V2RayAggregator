@@ -1,14 +1,14 @@
-  - {name: 🇨🇳 广东省广州市 电信, server: 8tv68qhq.slashdevslashnetslashtun.net, port: 15003, type: ss, cipher: aes-256-gcm, password: 4KGHWKCKQAJOVPHO}
-  - {name: 🇨🇳 江苏省 移动, server: jp1.relay.windraycloud.top, port: 41281, type: vmess, uuid: edcb72d6-b67f-3c83-ad3d-cdf424d98593, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 美国 Fastly全球Anycast节点, server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}}
   - {name: 🇸🇬 美国 新泽西州皮斯卡特维IT7网络, server: a.1314lovelydog.top, port: 443, type: vmess, uuid: 29d9535b-f25b-4936-e524-7368f67f2d7d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /abc, headers: {Host: a.1314lovelydog.top}}}
-  - {name: 🇨🇳 广东省广州市 电信 2, server: ti3hyra4.slashdevslashnetslashtun.net, port: 16012, type: ss, cipher: aes-256-gcm, password: M37MQGZ4YFYNWIPD}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.21.28.26, port: 443, type: trojan, password: 21e5535e-4783-4a80-a735-24a1162d315c, sni: xxscdF56.999182.xYZ, skip-cert-verify: false}
-  - {name: 🇨🇳 江苏省 移动 2, server: f8cwp-g04.ua01-ae5.entry.v50307shvkaa.art, port: 20072, type: ss, cipher: aes-256-gcm, password: 6a828f44-0434-3bd4-aca5-a90b696a910c}
-  - {name: 广东省中山市 移动, server: 183.238.90.8, port: 39076, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 广东省广州市 电信 3, server: ti3hyra4.slashdevslashnetslashtun.net, port: 16010, type: ss, cipher: aes-256-gcm, password: 8V6YUTE50KU37V7Z}
-  - {name: 广东省汕头市 移动, server: 204bdce4-sxaf40-t5bgb3-l4nv.cm5.cnkuaishou.com, port: 27231, type: trojan, password: 1469e09e-027c-11ec-a0fc-f23c913c8d2b, sni: 204bdce4-sxaf40-t5bgb3-l4nv.cm5.cnkuaishou.com, skip-cert-verify: false}
-  - {name: 广东省中山市 移动 2, server: 183.238.90.8, port: 41766, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 广东省广州市 移动, server: 183.236.51.38, port: 59652, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 北美地区 V2CROSS.COM, server: 104.167.197.25, port: 57456, type: ss, cipher: chacha20-ietf-poly1305, password: 360e21d21977dc11}
-  - {name: 🇮🇳 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: irsoft.sytes.net}}}
-  - {name: 广东省梅州市 移动, server: 183.237.84.53, port: 55002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇮🇳 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sahand.serveminecraft.net}}}
+  - {name: 🇮🇳 印度 V2CROSS.COM 2, server: 202.78.162.5, port: 443, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: irsoft.sytes.net}}}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 172.67.214.33, port: 2082, type: vmess, uuid: 2f821152-c3e9-4074-9185-2790e7425f42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cs.flha.ru}}}
+  - {name: 广东省湛江市 移动, server: 120.198.71.216, port: 46159, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 安徽省合肥市 移动, server: f8cwp-g04.ua01-ae5.entry.v50307shvkaa.art, port: 20072, type: ss, cipher: aes-256-gcm, password: 6a828f44-0434-3bd4-aca5-a90b696a910c}
+  - {name: 广东省汕头市 移动, server: 4aaff985-sxfz40-t1jamc-1fvdh.cm5.cnkuaishou.com, port: 27231, type: trojan, password: 9e1ddc04-073b-11ed-bd7c-f23c913c8d2b, sni: 4aaff985-sxfz40-t1jamc-1fvdh.cm5.cnkuaishou.com, skip-cert-verify: false}
+  - {name: 广东省梅州市 移动, server: v8.heduian.link, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: v8.heduian.link}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 172.67.170.51, port: 443, type: trojan, password: 21e5535e-4783-4a80-a735-24a1162d315c, sni: sscDfr5.999182.XyZ, skip-cert-verify: false}
+  - {name: 🇨🇳 广东省广州市 电信, server: ti3hyra4.slashdevslashnetslashtun.net, port: 16010, type: ss, cipher: aes-256-gcm, password: 8V6YUTE50KU37V7Z}
+  - {name: 🇫🇷 法国 巴黎Amazon数据中心, server: 35.180.8.53, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false}
+  - {name: 🇺🇸 美国 Sprint网络, server: 63.178.159.1, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false}
+  - {name: 🇸🇪 瑞典 V2CROSS.COM, server: 185.146.173.25, port: 80, type: vmess, uuid: 46181c32-8c82-413a-b836-8375e5e513eb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560", headers: {Host: google.whatsapp.snapp.torob.basalam.sarzamiiinahang.ir.}}}
