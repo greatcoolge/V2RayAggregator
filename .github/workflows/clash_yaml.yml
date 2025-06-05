@@ -1,6 +1,5 @@
 name: clash_yaml
 
-# 触发条件
 on:
   workflow_dispatch:
 
@@ -16,23 +15,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+
       - name: Install Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: "3.x"
+
       - name: Load Cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/run_in_Actions/requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
+
       - name: Set Timezone
         run: sudo timedatectl set-timezone 'Asia/Tehran'
+
       - name: Install Dependencies
         run: |
           pip install -r ./utils/requirements.txt
+
       - name: Run Lite Speedtest
         run: |
           wget -O subconverter.tar.gz https://github.com/tindy2013/subconverter/releases/download/v0.7.2/subconverter_linux64.tar.gz
@@ -40,6 +44,7 @@ jobs:
           chmod +x ./subconverter/subconverter && nohup ./subconverter/subconverter >./subconverter.log 2>&1 &
 
           python ./utils/eternity_convert.py
+
       - name: Commit changes
         run: |
           git config --local user.email "actions@github.com"
@@ -50,9 +55,9 @@ jobs:
           git add README.md
           git add ./update/*
           git add LogInfo.txt
-          git commit -m "$(date '+%Y-%m-%d %H:%M:%S') Filter Nodes"
+          git commit -m "$(date '+%Y-%m-%d %H:%M:%S') Filter Nodes" || echo "No changes to commit"
+
       - name: Push Change
         uses: ad-m/github-push-action@master
         with:
-          # github_token: ${{ secrets.TOKEN }}
           branch: master
