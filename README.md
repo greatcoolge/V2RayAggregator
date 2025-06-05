@@ -527,8 +527,8 @@ merge nodes w/o dup: `180`
 - [ermaozi/get_subscribe](https://github.com/ermaozi/get_subscribe), number of nodes: `20`
 - [anaer/Sub](https://github.com/anaer/Sub), number of nodes: `31`
 - [aiboboxx/v2rayfree](https://github.com/aiboboxx/v2rayfree), number of nodes: `58`
-- [Pawdroid/Free-servers](https://github.com/Pawdroid/Free-servers), number of nodes: `12`
-- [mfuu/v2ray](https://github.com/mfuu/v2ray), number of nodes: `296`
+- [Pawdroid/Free-servers](https://github.com/Pawdroid/Free-servers), number of nodes: `14`
+- [mfuu/v2ray](https://github.com/mfuu/v2ray), number of nodes: `301`
 - [peasoft/NoMoreWalls](https://github.com/peasoft/NoMoreWalls), number of nodes: `58`
 
 ## Softwares
