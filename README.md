@@ -61,9 +61,9 @@ The speed measurement function is implemented in the `GitHub Actions` environmen
 Nodes filtered using speedtest measurement will be stored in following files:  
 
 * Group 1 (Contains free public nodes)
-- [Base64](https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity)
-- [Mixed](https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.txt)
-- [Clash](https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml)
+- [Base64](https://raw.githubusercontent.com/greatcoolge/ShadowsocksAggregator/master/Eternity)
+- [Mixed](https://raw.githubusercontent.com/greatcoolge/ShadowsocksAggregator/master/Eternity.txt)
+- [Clash](https://raw.githubusercontent.com/greatcoolge/ShadowsocksAggregator/master/Eternity.yml)
 
 * Group 2 (Contains only free airports)
 - [Base64](https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/EternityAir)
@@ -76,9 +76,9 @@ Nodes filtered using speedtest measurement will be stored in following files:
 All of the nodes merged together will be stored in following files:  
 
 * Group 1 (Contains free public nodes)
-- [Base64](https://raw.githubusercontent.com/mahdibland/SSAggregator/master/sub/sub_merge_base64.txt)
-- [Mixed](https://raw.githubusercontent.com/mahdibland/SSAggregator/master/sub/sub_merge.txt)
-- [Clash](https://raw.githubusercontent.com/mahdibland/SSAggregator/master/sub/sub_merge_yaml.yml)
+- [Base64](https://raw.githubusercontent.com/greatcoolge/SSAggregator/master/sub/sub_merge_base64.txt)
+- [Mixed](https://raw.githubusercontent.com/greatcoolge/SSAggregator/master/sub/sub_merge.txt)
+- [Clash](https://raw.githubusercontent.com/greatcoolge/SSAggregator/master/sub/sub_merge_yaml.yml)
 
 * Group 2 (Contains only free airports)
 - [Base64](https://raw.githubusercontent.com/mahdibland/SSAggregator/master/sub/airport_merge_base64.txt)
