@@ -180,35 +180,44 @@ def eternity_convert(file, config, output, provider_file_enabled=True):
 
     # 创建节点名列表
     all_name = []
-#     others_name = []
-#     us_name = []
-#     hk_name = []
-#     sg_name = []
+    # others_name = []
+    # us_name = []
+    # hk_name = []
+    # sg_name = []
     name_dict = {
         'all': all_name,
-        #         'others': others_name,
-        #         'us': us_name,
-        #         'hk': hk_name,
-        #         'sg': sg_name
+         # 'others': others_name,
+         # 'us': us_name,
+         # 'hk': hk_name,
+         # 'sg': sg_name
     }
 
     indexx = 0
     for key in provider_dic.keys():
-        if not provider_dic[key]['proxies'] is None:
+        if provider_dic[key]['proxies'] is not None:
             for proxy in provider_dic[key]['proxies']:
                 if indexx in skip_names_index:
-                    indexx += 1 
+                    indexx += 1
                     continue
                 try:
-                    speed = substrings(
-                        log_lines_without_bad_char[indexx], "avg_speed:", "|")
-                    name_dict[key].append(
-                        str(proxy['name']).replace(" ", "") + " | " + speed)
-                except:
+                    if indexx < len(log_lines_without_bad_char):
+                        speed = substrings(
+                            log_lines_without_bad_char[indexx], "avg_speed:", "|")
+                        name_dict[key].append(
+                            str(proxy['name']).replace(" ", "") + " | " + speed)
+                    else:
+                        print(f"⚠️ indexx={indexx} 超出 log_lines_without_bad_char 的长度 {len(log_lines_without_bad_char)}")
+                        name_dict[key].append(str(proxy['name']).replace(" ", ""))
+                except Exception as e:
+                    print(f"⚠️ 异常: {e}")
+                    if indexx < len(log_lines_without_bad_char):
+                        print(log_lines_without_bad_char[indexx])
+                    else:
+                        print(f"⚠️ 无法打印日志，indexx={indexx} 超出范围")
                     name_dict[key].append(str(proxy['name']).replace(" ", ""))
-                    print(log_lines_without_bad_char[indexx])
 
                 indexx += 1
+
 
         if provider_dic[key]['proxies'] is None:
             name_dict[key].append('DIRECT')
