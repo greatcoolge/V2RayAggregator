@@ -91,38 +91,47 @@ def eternity_convert(file, config, output, provider_file_enabled=True):
     lines = re.split(r'\n+', all_provider)
 
     proxy_all = []
-    #     us_proxy = []
-    #     hk_proxy = []
-    #     sg_proxy = []
-    #     others_proxy = []
     indexx = 0
     skip_names_index = []
+
     for line in lines:
         if line != 'proxies:':
             try:
                 name = substrings(line, "name:", ",")
-                speed = substrings(
-                    log_lines_without_bad_char[indexx], "avg_speed:", "|")
-                line = re.sub("name:( |)(.*?),", "name: %s | %s," %
-                              (name, speed), line)
-            except:
-                print(log_lines_without_bad_char[indexx])
-                pass
-            #           line = '  ' + line
+
+                # ✅ 判断索引是否越界
+                if indexx < len(log_lines_without_bad_char):
+                    speed = substrings(log_lines_without_bad_char[indexx], "avg_speed:", "|")
+                else:
+                    speed = "N/A"  # 或者跳过，或者设置默认值
+                    print(f"⚠️ indexx={indexx} 超出 log_lines_without_bad_char 的长度 {len(log_lines_without_bad_char)}")
+            
+                line = re.sub(r"name:( |)(.*?),", f"name: {name} | {speed},", line)
+        
+            except Exception as e:
+                print(f"⚠️ 异常: {e}")
+                print(f"跳过 indexx={indexx}，当前 line: {line}")
+                indexx += 1
+                continue  # 💡 出错也应该跳过这一行，避免计数不同步
+
             line = line.replace('- ', '')
-            line_parsed = yaml.safe_load(line)
+            try:
+                line_parsed = yaml.safe_load(line)
+            except Exception as e:
+                print(f"⚠️ YAML解析失败：{line}\n错误: {e}")
+                indexx += 1
+                continue
+
             if "password" in line_parsed:
                 line_parsed.update({"password": str(line_parsed.get("password"))})
-                # interpreted as a floating-point number
                 if re.match(r'^\d+\.?\d*[eE][-+]?\d+$', line_parsed["password"]):
                     skip_names_index.append(indexx)
                     indexx += 1
                     continue
-                
-            linee = line_parsed
-            proxy_all.append(linee)
 
+            proxy_all.append(line_parsed)
             indexx += 1
+
 
     if provider_file_enabled:
         providers_files = {
